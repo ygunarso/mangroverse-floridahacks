@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myTreesFragment">
+
+    <fragment
+        android:id="@+id/myTreesFragment"
+        android:name="com.floridahacksibm.mangrovetracker.MyTreesFragment"
+        android:label="fragment_my_trees"
+        tools:layout="@layout/fragment_my_trees" />
+<!--    <fragment-->
+<!--        android:id="@+id/mapFragment"-->
+<!--        android:name="com.floridahacksibm.mangrovetracker.MapFragment"-->
+<!--        android:label="fragment_map"-->
+<!--        tools:layout="@layout/fragment_map" />-->
+    <fragment
+        android:id="@+id/plantFragment"
+        android:name="com.floridahacksibm.mangrovetracker.PlantFragment"
+        android:label="fragment_plant"
+        tools:layout="@layout/fragment_plant" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.floridahacksibm.mangrovetracker.DonateFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_donate" />
+<!--    <fragment-->
+<!--        android:id="@+id/userFragment"-->
+<!--        android:name="com.floridahacksibm.mangrovetracker.UserFragment"-->
+<!--        android:label="fragment_user"-->
+<!--        tools:layout="@layout/fragment_user" />-->
+</navigation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_money"
+        android:title="Donate" />
+    <item
+        android:id="@+id/myTreesFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_tree"
+        android:title="My Trees" />
+    <item
+        android:id="@+id/plantFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_plant"
+        android:title="Plant" />
+<!--    <item-->
+<!--        android:id="@+id/mapFragment"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_map"-->
+<!--        android:title="Track" />-->
+<!--    <item-->
+<!--        android:id="@+id/userFragment"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_user"-->
+<!--        android:title="User" />-->
+</menu>

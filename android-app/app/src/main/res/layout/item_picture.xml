@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="96dp"
+    android:layout_height="128dp"
+    android:layout_marginRight="8dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/picture_card"
+        android:layout_width="96dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+        android:id="@+id/pictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/treePicture"
+                android:layout_gravity="center"
+                android:background="@drawable/add_photo"
+                android:layout_width="128dp"
+                android:layout_height="96dp"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addPhotoImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+                <ImageView
+                    android:id="@+id/addPhotoIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_camera_add"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/addPhotoText"/>
+                <TextView
+                    android:id="@+id/addPhotoText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/medium12"
+                    android:text="Add Photos"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/dark_light_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/addPhotoIcon"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

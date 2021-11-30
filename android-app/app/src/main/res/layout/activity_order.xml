@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity">
+
+    <TextView
+        android:id="@+id/orderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Orders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <TextView
+        android:id="@+id/orderIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Order ID: "
+        app:layout_constraintStart_toStartOf="@+id/orderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/orderTitle" />
+    <TextView
+        android:id="@+id/orderID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/orderIDLabel"
+        app:layout_constraintTop_toTopOf="@+id/orderIDLabel" />
+
+    <TextView
+        android:id="@+id/processingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="Order Processing"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/orderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/orderID" />
+
+    <TextView
+        android:id="@+id/preparingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Preparing Order"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/orderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/processingTitle" />
+
+    <TextView
+        android:id="@+id/readyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Order Ready"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/orderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/preparingTitle" />
+
+    <TextView
+        android:id="@+id/pickedUpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Pick up Confirmed"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/orderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/readyTitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

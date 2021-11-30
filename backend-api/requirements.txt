@@ -1,0 +1,9 @@
+Flask>=1.0.0
+cloudant==2.13.0
+qrcode>=6.1
+Pillow>=6.0.0
+ibm-cos-sdk
+boto3
+resources
+pandas
+geopy

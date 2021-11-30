@@ -1,0 +1,5 @@
+---
+applications:
+ - name: mangrove-backend-api
+   random-route: true
+   memory: 128M
